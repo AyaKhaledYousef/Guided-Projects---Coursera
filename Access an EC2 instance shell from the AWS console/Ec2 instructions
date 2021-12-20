@@ -1,0 +1,21 @@
+#install apache http server
+ 
+sudo yum install httpd -y 
+
+sudo service httpd start
+
+sudo service httpd status  # to chech it is running or not
+
+
+# To deploy web app 
+
+# check security group to allow (ssh , http and https)
+
+cd /var/www/html
+sudo nano index.html 
+#then  write your html code 
+
+
+#press to address here => Public IPv4 DNS 
+#then change from https to http
+
